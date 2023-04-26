@@ -31,7 +31,7 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"Artist 1 - audio 1",
-      file:"https://github.com/Frankstream/CRIMEN-INVESTIGACION-web/gh-pages/1x1metalmadnessbalcei-ondabalcei-ivoox103972205.mp3",
+      file:"https://manzdev.github.io/codevember2017/assets/eye-tiger.mp3",
       duration:"08:47"
     },
     {
