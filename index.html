@@ -2,67 +2,81 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - MP3 player with SLIDER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <title>CodePen - HTML Audio Player</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+    <title>MP3 Player</title>
+    <link rel=stylesheet href="style.css" media=all> 
   </head>
- <body>
-   <div class='gather'>
-    <div class='main'>
-     <div class='slider'>
-      <ul class='slider-wrap'>
-        <li class='slider-item' id='item1'></li>
-        <li class='slider-item' id='item2'></li>
-        <li class='slider-item' id='item3'></li>
-        <li class='slider-item' id='item4'></li>
-        <li class='slider-item' id='item5'></li>
-      </ul>
-     </div>
-     <div class='control'>
-       <div class='playList'>
-         <div class='c-left'>
-           <i class="fa fa-step-backward icon" ></i>
-         </div>
-         <div class='c-on'>
-           <i class="fa fa-play fa-2x icon" id='playit'></i>
-         </div>
-         <div class='c-right'>
-           <i class="fa fa-step-forward icon" id='step-right'></i>
-         </div>
-       </div>
-       <div class='line'>
-        <p class='m-time'>02:34</p>
-        <input type='range' class='m-line' value='30' step='1'>
-       </div>
-       <div class='footer'>
-         <div class='footer-item'>
-           <i class="fa fa-random fa-2x icon" id='random'></i>
-      </div>
-         <div class='footer-item'>
-           <i class="fa fa-ellipsis-h  fa-2x icon" id='ellipsis'></i>
-         </div>
-         <div class='footer-item'>
-           <i class="fa fa-heart fa-2x icon" id='heart'></i>
-         </div>
-         <div class='footer-item'>
-           <i class="fa fa-repeat fa-2x icon" id='repeat'></i>
-         </div>
-      </div>
+  <body>
 
-     </div>
-    </div>
+
+<audio id="myAudio" ontimeupdate="onTimeUpdate()">
+  <!-- <source src="audio.ogg" type="audio/ogg"> -->
+  <source id="source-audio" src="" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="player-ctn">
+  <div class="infos-ctn">
+    <div class="timer">00:00</div>
+    <div class="title"></div>
+    <div class="duration">00:00</div>
   </div>
- </body>
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+  <div class="btn-ctn">
+     <div class="btn-action first-btn" onclick="previous()">
+        <div id="btn-faws-back">
+          <i class='fas fa-step-backward'></i>
+        </div>
+     </div>
+     <div class="btn-action" onclick="rewind()">
+        <div id="btn-faws-rewind">
+          <i class='fas fa-backward'></i>
+        </div>
+     </div>
+     <div class="btn-action" onclick="toggleAudio()">
+        <div id="btn-faws-play-pause">
+          <i class='fas fa-play' id="icon-play"></i>
+          <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+        </div>
+     </div>
+     <div class="btn-play" onclick="forward()">
+        <div id="btn-faws-forward">
+          <i class='fas fa-forward'></i>
+        </div>
+     </div>
+     <div class="btn-action" onclick="next()">
+        <div id="btn-faws-next">
+          <i class='fas fa-step-forward'></i>
+        </div>
+     </div>
+     <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+        <div id="btn-faws-volume">
+          <i id="icon-vol-up" class='fas fa-volume-up'></i>
+          <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
+        </div>
+     </div>
+  </div>
+  <div class="playlist-ctn"></div>
+</div>
+<script src=app.js></script>
+
+  </body>
 </html>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+  <script  src="./script.js"></script>
 
 </body>
 </html>
