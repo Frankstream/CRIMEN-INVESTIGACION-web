@@ -41,7 +41,7 @@ function createTrackItem(index,name,duration){
     },
     {
       name:"Artist 3 - audio 3",
-      file:"https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_1MG.mp3",
+      file:"https://github.com/Frankstream/CRIMEN-INVESTIGACION-web/blob/gh-pages/1x1metalmadnessbalcei-ondabalcei-ivoox103972205.mp3",
       duration:"00:27"
     }
   ]
