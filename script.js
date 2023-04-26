@@ -31,7 +31,7 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"Artist 1 - audio 1",
-      file:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3",
+      file:"https://github.com/Frankstream/CRIMEN-INVESTIGACION-web/blob/35a853e17f9a9744876594448a678547eca1887e/1x1metalmadnessbalcei-ondabalcei-ivoox103972205.mp3",
       duration:"08:47"
     },
     {
