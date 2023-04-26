@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body{
+  background:linear-gradient(45deg, #f1c40f 40%, #B3005A 55%);
+}
+/*#E3000E*/
+.gather{
+  margin-top:15px;
+}
+.main{
+  width:800px;
+  height:630px;
+  background:rgba(0, 0, 0, 0.4);
+  margin:0 auto 0 auto;
+  overflow:hidden;
+  box-shadow:0 0 8px #000;
+}
+.main::after{
+  content:'';
+  display:block;
+  width:215px;
+  height:453px;
+  position:absolute;
+  top:15px;
+  left:273px;
+  background:rgba(0, 0, 0, 0.8);
+}
+.main::before{
+  content:'';
+  display:block;
+  width:215px;
+  height:453px;
+  position:absolute;
+  top:15px;
+  left:64%;
+  background:rgba(0, 0,0,0.8);
+  z-index:1;
+}
+.slider{
+  margin-left:0;
+}
+.slider-wrap{
+  height:500px;
+  position:relative;
+  top:-24px;
+  margin-left:-540px;
+}
+.slider-item{
+  list-style:none;
+  font-size:20px;
+  color:#fff;
+  width:400px;
+  height:500px;
+  display:inline-block;
+  transform:scale(0.90);
+  margin-right:-30px;
+  box-shadow:0 0 12px #000;
+
+}
+.control{
+  width:100%;
+  height:180px;
+  margin-top:-65px;
+  background:#111;
+  opacity:0.7;
+}
+.c-left, .c-right{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  text-align:center;
+  padding:8.5px;
+  position:absolute;
+}
+.c-right{
+  left:52.5%;
+}
+.c-left{
+  left:42.5%;
+  padding-top:4px;
+}
+.c-on{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  text-align:center;
+  padding:8.5px;
+  position:absolute;
+  left:47.3%;
+  margin-top:5px;
+}
+.c-left, .c-right .fa{
+  font-size:23px;
+}
+.c-left, .c-right{
+  margin-top:10px;
+}
+.c-on .fa{
+  margin-left:4px;
+}
+.fa:active{
+  transform:scale(1.4);
+}
+.m-line{
+  width:95%;
+  height:5px;
+  background:#bdc3c7;
+  margin:70px auto 0 18px;
+  -webkit-appearance:none;
+  outline: 0;
+  overflow:hidden;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+ background-color: #E3000E;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ border: 4px solid white;
+ cursor: pointer;
+ transition: .3s ease-in-out;
+ box-shadow: 1px 5px 10px -1px #E3000E,
+    -35px 0 0 10px #ff564c,
+    -75px 0 0 10px #ff564c,
+    -125px 0 0 10px #ff564c,
+    -175px 0 0 10px #ff564c,
+    -225px 0 0 10px #ff564c,
+    -275px 0 0 10px #ff564c,
+    -325px 0 0 10px #ff564c,
+    -375px 0 0 10px #ff564c,
+    -425px 0 0 10px #ff564c,
+    -475px 0 0 10px #ff564c,
+    -525px 0 0 10px #ff564c,
+    -575px 0 0 10px #ff564c,
+    -625px 0 0 10px #ff564c,
+    -675px 0 0 10px #ff564c,
+    -725px 0 0 10px #ff564c,
+    -775px 0 0 10px #ff564c;
+}
+
+.m-time{
+  font-size:11px;
+  font-family:'Open Sans',sans-serif;
+  opacity:0.7;
+  color:#fff;
+  position:relative;
+  top:57px;
+  left:3%;
+}
+.footer-item .fa{
+  font-size:19px;
+}
+.footer-item{
+  display:inline-block;
+  margin-left:55px;
+}
+.footer{
+  margin-left:26.7%;
+  margin-top:40px;
+}
+.fa:hover{
+  transform:scale(1.15);
+  transition:all 0.3s;
+  cursor:pointer;
+}
+.icon{
+  color:#fff;
+}
+.act{
+  color:#ff564c;
+}
+#item1{
+  background:url(https://s-media-cache-ak0.pinimg.com/736x/e6/17/6c/e6176c9a577aca8e190bb22ce82cda39.jpg);
+  background-size:cover;
+}
+#item2{
+  background:url(https://0.s3.envato.com/files/172616346/Preview%20Image%20Set/02_Epic%20Music%20Flyer%20Template.jpg);
+  background-size:cover;
+}
+#item3{
+  background:url(http://img10.deviantart.net/2733/i/2015/110/4/9/electro_music_flyer_by_iorkdesign-d8qfo64.jpg);
+  background-size:cover;
+}
+#item4{
+  background:url(https://marketplace.canva.com/MACTNth_7aU/1/0/thumbnail_large/canva-neon-blue-illustrated-dj-music-flyer-MACTNth_7aU.jpg);
+  background-size:cover;
+}
+#item5{
+  background:url(https://s-media-cache-ak0.pinimg.com/736x/07/91/aa/0791aafb809d1e580e5fd41e59ce8b59.jpg);
+  background-size:cover;
+}
+@media screen and (max-width:1020px){
+  .main::after{
+    left:6.3%;
+  }
+  .main::before{
+    left:70.3%;
+  }
+}

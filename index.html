@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - MP3 player with SLIDER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+ <body>
+   <div class='gather'>
+    <div class='main'>
+     <div class='slider'>
+      <ul class='slider-wrap'>
+        <li class='slider-item' id='item1'></li>
+        <li class='slider-item' id='item2'></li>
+        <li class='slider-item' id='item3'></li>
+        <li class='slider-item' id='item4'></li>
+        <li class='slider-item' id='item5'></li>
+      </ul>
+     </div>
+     <div class='control'>
+       <div class='playList'>
+         <div class='c-left'>
+           <i class="fa fa-step-backward icon" ></i>
+         </div>
+         <div class='c-on'>
+           <i class="fa fa-play fa-2x icon" id='playit'></i>
+         </div>
+         <div class='c-right'>
+           <i class="fa fa-step-forward icon" id='step-right'></i>
+         </div>
+       </div>
+       <div class='line'>
+        <p class='m-time'>02:34</p>
+        <input type='range' class='m-line' value='30' step='1'>
+       </div>
+       <div class='footer'>
+         <div class='footer-item'>
+           <i class="fa fa-random fa-2x icon" id='random'></i>
+      </div>
+         <div class='footer-item'>
+           <i class="fa fa-ellipsis-h  fa-2x icon" id='ellipsis'></i>
+         </div>
+         <div class='footer-item'>
+           <i class="fa fa-heart fa-2x icon" id='heart'></i>
+         </div>
+         <div class='footer-item'>
+           <i class="fa fa-repeat fa-2x icon" id='repeat'></i>
+         </div>
+      </div>
+
+     </div>
+    </div>
+  </div>
+ </body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
