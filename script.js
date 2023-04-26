@@ -36,7 +36,7 @@ function createTrackItem(index,name,duration){
     },
     {
       name:"Artist 2 - audio 2",
-      file:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+      file:"https://Frankstream.github.io/CRIMEN-INVESTIGACION-web/gh-pages/1x1metalmadnessbalcei-ondabalcei-ivoox103972205.mp3",
       duration:"05:53"
     },
     {
